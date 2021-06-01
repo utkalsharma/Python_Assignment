@@ -106,7 +106,7 @@ def azure_kml_upload(kml_data: str) -> str:
             conn_str=connect_str, container_name=container_name, blob_name=file_name)
 
     blob.upload_blob(kml_data)
-    blob_url = "https://geowgs84apis.blob.core.windows.net/kml-storage/" + file_name
+    blob_url = "https://assignmentkmlfunc.blob.core.windows.net/kml-storage/" + file_name
 
     # Finally return newly created blob url
     return blob_url
